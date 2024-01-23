@@ -3,7 +3,26 @@
       font-size: 14px;
     }
   }
-
+  @keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
 
   *{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
@@ -20,6 +39,7 @@ h4, h1, h3, p{
 .head-conteiner{
     width: 100%;
     display: flex;
+    animation: fade-down 1.5s;
 }
 .top-text-container{
     max-width: 49%;
@@ -51,12 +71,11 @@ h4, h1, h3, p{
     width: 50%;
     display: flex;
     justify-content: center;
-    margin-top: 20px;;
+    margin-top: 20px;
 }
 .saludo{
     display: flex;
     margin-left: 100%;
-    
 }
 .foto-container {
     overflow: hidden;
@@ -81,6 +100,7 @@ h4, h1, h3, p{
     margin-left: 5%;
     max-width: 90%;
     margin-top: 5rem;
+ 
 }
 
 .title1{
@@ -118,6 +138,7 @@ h4, h1, h3, p{
     background-color: #353333;
     display: inline-flex;
     height: auto;
+    animation: fadeInFromLeft 1s;
 }
 .imagen-container1{
     width: 50%;
@@ -213,5 +234,6 @@ h4, h1, h3, p{
     margin-right: 5%;
     margin-top: 100px;
 }
+
 
   
